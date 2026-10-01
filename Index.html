@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Rudresh Soni | Business Analyst, Consulting & Product</title>
+<meta name="description" content="Business Architecture Analyst at Accenture. RFP solutioning, requirements, Power BI and AI agent prototypes across aerospace, automotive, defense and manufacturing.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:wght@500;700;800&display=swap" rel="stylesheet">
+<style>
+:root{--bg:#F5F6FA;--card:#fff;--ink:#131734;--mute:#586080;--line:#DDE0EE;--acc:#3B3FD8;--tint:#E8E9FF;--on:#fff;
+box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}
+@media(prefers-color-scheme:dark){:root:not([data-theme="light"]){--bg:#0E1022;--card:#171A33;--ink:#ECEEFF;--mute:#9AA1C7;--line:#2A2E52;--acc:#8C93FF;--tint:#252A5C;--on:#0E1022}}
+:root[data-theme="dark"]{--bg:#0E1022;--card:#171A33;--ink:#ECEEFF;--mute:#9AA1C7;--line:#2A2E52;--acc:#8C93FF;--tint:#252A5C;--on:#0E1022}
+html{scroll-behavior:smooth;scroll-padding-top:calc(env(safe-area-inset-top,0px) + 70px)}
+*,*:before,*:after{box-sizing:border-box}
+body{margin:0;background:var(--bg);color:var(--ink);font:16px/1.6 system-ui,-apple-system,"Segoe UI",Roboto,sans-serif}
+h1,h2,h3{font-family:"Bricolage Grotesque",system-ui,sans-serif;line-height:1.1;margin:0;letter-spacing:-.02em}
+a{color:inherit}
+.wrap{max-width:960px;margin:0 auto;padding:0 20px}
+:focus-visible{outline:3px solid var(--acc);outline-offset:2px}
+nav{position:sticky;top:env(safe-area-inset-top,0px);z-index:5;background:color-mix(in srgb,var(--bg) 88%,transparent);backdrop-filter:blur(10px);border-bottom:1px solid var(--line)}
+nav .wrap{display:flex;align-items:center;gap:6px;height:54px;overflow-x:auto}
+nav b{font-family:"Bricolage Grotesque",sans-serif;margin-right:auto;white-space:nowrap}
+nav a{text-decoration:none;font-size:14px;color:var(--mute);padding:6px 10px;border-radius:8px;white-space:nowrap}
+nav a:hover{color:var(--ink);background:var(--tint)}
+button{font:inherit;cursor:pointer}
+#th{border:1px solid var(--line);background:var(--card);color:var(--ink);border-radius:8px;padding:4px 9px}
+.hero{padding:64px 0 36px}
+.hero h1{font-size:clamp(40px,8vw,76px);font-weight:800;max-width:14ch}
+.hero p.lead{font-size:clamp(17px,2.4vw,21px);color:var(--mute);max-width:56ch;margin:18px 0 26px}
+.cta{display:flex;flex-wrap:wrap;gap:10px}
+.btn{display:inline-block;text-decoration:none;padding:11px 18px;border-radius:10px;font-weight:600;border:1px solid var(--line);background:var(--card);color:var(--ink)}
+.btn.p{background:var(--acc);color:var(--on);border-color:var(--acc)}
+.btn:hover{transform:translateY(-1px)}
+.lens{background:var(--card);border:1px solid var(--line);border-radius:16px;padding:18px;margin-top:34px}
+.lens h2{font-size:20px}
+.lens small{color:var(--mute)}
+.chips{display:flex;flex-wrap:wrap;gap:8px;margin:12px 0}
+.chip{border:1px solid var(--line);background:var(--bg);color:var(--ink);border-radius:99px;padding:7px 14px;font-size:14px}
+.chip[aria-pressed="true"]{background:var(--acc);color:var(--on);border-color:var(--acc)}
+#blurb{margin:0;min-height:3.2em}
+.stats{display:grid;grid-template-columns:repeat(auto-fit,minmax(130px,1fr));gap:12px;margin:28px 0 0}
+.stat{border-left:3px solid var(--acc);padding:2px 12px}
+.stat b{display:block;font:800 34px "Bricolage Grotesque",sans-serif}
+.stat span{font-size:13px;color:var(--mute)}
+section{padding:46px 0 10px}
+section>.wrap>h2{font-size:clamp(28px,5vw,40px);margin-bottom:20px}
+.job{background:var(--card);border:1px solid var(--line);border-radius:16px;padding:20px;margin-bottom:16px}
+.job header{display:flex;flex-wrap:wrap;justify-content:space-between;gap:4px 16px;margin-bottom:8px}
+.job h3{font-size:20px}
+.job .meta{color:var(--mute);font-size:14px}
+.job ul{margin:0;padding:0;list-style:none}
+.b{padding:8px 10px;margin:2px -10px;border-radius:8px;border-left:3px solid transparent;transition:opacity .25s,background .25s}
+.b.on{background:var(--tint);border-left-color:var(--acc)}
+.b.dim{opacity:.42}
+.skills{display:flex;flex-wrap:wrap;gap:8px}
+.sk{padding:6px 12px;border-radius:8px;border:1px solid var(--line);background:var(--card);font-size:14px;transition:all .25s}
+.sk.on{background:var(--acc);color:var(--on);border-color:var(--acc)}
+.sk.dim{opacity:.45}
+.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));gap:16px}
+.grid .job{margin:0}
+.job p{margin:6px 0 0}
+details{border-top:1px solid var(--line);padding:10px 0}
+summary{cursor:pointer;font-weight:600}
+.contact{text-align:center;padding:60px 0 70px}
+.contact h2{font-size:clamp(30px,6vw,48px);margin-bottom:12px}
+.contact p{color:var(--mute);max-width:46ch;margin:0 auto 22px}
+.contact .cta{justify-content:center}
+footer{border-top:1px solid var(--line);padding:18px 0;color:var(--mute);font-size:13px;text-align:center}
+#toast{position:fixed;left:50%;bottom:calc(env(safe-area-inset-bottom,0px) + 20px);transform:translateX(-50%);background:var(--ink);color:var(--bg);padding:9px 16px;border-radius:10px;opacity:0;pointer-events:none;transition:opacity .2s}
+#toast.show{opacity:1}
+@media(prefers-reduced-motion:reduce){*{transition:none!important;scroll-behavior:auto!important}}
+</style>
+</head>
+<body>
+<nav><div class="wrap"><b>Rudresh Soni</b><a href="#experience">Experience</a><a href="#skills">Skills</a><a href="#projects">Projects</a><a href="#education">Education</a><a href="#contact">Contact</a><button id="th" aria-label="Toggle light or dark theme">◐</button></div></nav>
+
+<header class="hero"><div class="wrap">
+<h1>I turn business needs into clear solutions.</h1>
+<p class="lead">Business Architecture Analyst at Accenture, Bengaluru. I write requirements, win-theme RFP responses, Power BI views and AI agent prototypes for aerospace, automotive, defense and manufacturing clients. Mechanical engineer, MBA, and a founder who has sold a product.</p>
+<div class="cta"><a class="btn p" href="#contact">Get in touch</a><a class="btn" href="https://www.linkedin.com/in/rudreshsoni" target="_blank" rel="noopener">View LinkedIn</a></div>
+
+<div class="lens">
+<h2>See my work through the lens of a role</h2>
+<small>Pick a role. Experience and skills below will highlight what matters for it.</small>
+<div class="chips" role="group" aria-label="Role lens" id="chips"></div>
+<p id="blurb"></p>
+</div>
+
+<div class="stats">
+<div class="stat"><b data-n="15">0</b><span>RFP responses contributed to</span></div>
+<div class="stat"><b data-n="8">0</b><span>AI agent use cases prototyped</span></div>
+<div class="stat"><b data-n="5">0</b><span>Power BI dashboards maintained</span></div>
+<div class="stat"><b data-n="50">0</b><span>enterprise risks documented</span></div>
+<div class="stat"><b data-n="50">0</b><span>units of own product sold</span></div>
+</div>
+</div></header>
+
+<section id="experience"><div class="wrap"><h2>Experience</h2><div id="jobs"></div></div></section>
+<section id="skills"><div class="wrap"><h2>Skills</h2><div class="skills" id="sk"></div></div></section>
+
+<section id="projects"><div class="wrap"><h2>Projects and credentials</h2>
+<div class="grid">
+<div class="job"><h3>Fusion: NFC smart business card</h3><p class="meta">Wolf Rayet Technology, 2022 to 2023</p><p>Found user pain points, defined product requirements and positioned the product for the market. Sold 50+ units.</p></div>
+<div class="job"><h3>Certifications</h3><p>ECBA (IIBA), Siemens Sales Certification (2025, 2026), Reinvention with Agentic AI (Accenture), Digital Transformation (Coursera), Fundamentals of Digital Marketing (Google).</p></div>
+<div class="job"><h3>Achievements</h3><p>2nd place, Business Plan Competition, B K School of Management. Placement committee member and anchor at the HR and BATL Conclaves, PDEU.</p></div>
+</div></div></section>
+
+<section id="education"><div class="wrap"><h2>Education</h2>
+<div class="job"><header><h3>MBA, Marketing &amp; Business Analytics</h3><span class="meta">2023 to 2025</span></header><p class="meta">Pandit Deendayal Energy University · 81.38%</p></div>
+<div class="job"><header><h3>BTech, Mechanical Engineering</h3><span class="meta">2017 to 2021</span></header><p class="meta">Ahmedabad University</p></div>
+</div></section>
+
+<section class="contact" id="contact"><div class="wrap">
+<h2>Let's talk about the role or the problem.</h2>
+<p>Open to business analyst, consulting, product and pre-sales roles where I can take on more ownership.</p>
+<div class="cta">
+<a class="btn p" href="mailto:sonirudresh1@gmail.com">Email me</a>
+<button class="btn" id="cp">Copy email</button>
+<a class="btn" href="https://www.linkedin.com/in/rudreshsoni" target="_blank" rel="noopener">LinkedIn</a>
+</div></div></section>
+<footer><div class="wrap">Rudresh Soni · Bengaluru, India</div></footer>
+<div id="toast" role="status"></div>
+
+<script>
+const LENSES={all:["All",'Showing everything. Choose a role to highlight the evidence that fits it best.'],
+prod:["Product",'Customer discovery, MVP validation and requirements. I built and sold Fusion, and I prototype AI agents that turn needs into working tools.'],
+con:["Consulting",'Structured problem solving, research and executive communication, from EY risk and ESG work to strategic briefs at Accenture.'],
+pre:["Pre-sales",'15+ RFP responses, solution narratives tied to win themes, and dashboards that give sales leadership one view of the pipeline.'],
+biz:["Business mgmt",'Delivering on time, reporting to leadership, and finding bottlenecks to define better To-Be workflows.']};
+const JOBS=[
+{t:"Business Architecture Analyst",o:"Accenture, Bengaluru",d:"Sep 2025 to present",b:[
+["Contributed to 15+ RFP responses across aerospace, automotive, defense and manufacturing, writing solution narratives and technical sections aligned to client win themes.","pre con"],
+["Elicited requirements from architects, delivery leads, bid managers and sales teams, documented as BRDs, user stories and solution blueprints across 5+ workstreams.","prod biz con"],
+["Built and maintain 5+ Power BI dashboards that consolidate CRM and sales data into one view of the pipeline for leadership.","pre biz"],
+["Prototyped 8+ AI agent use cases in Copilot Studio for document generation, requirement analysis, status reporting and knowledge retrieval.","prod pre"],
+["Researched PLM, digital twin and Industry 4.0 trends and wrote 10+ strategic briefs to inform offerings and positioning.","con prod"],
+["Prepared weekly executive summaries and business cases; used ticket and gap analysis to find bottlenecks and define better To-Be workflows.","biz con"]]},
+{t:"Summer Intern, Risk Advisory (ERM)",o:"EY, Mumbai",d:"Apr to Jun 2024",b:[
+["Documented 50+ enterprise risks across 3+ industries, aligned to COSO and ISO 31000, turning client workshops into risk registers with ratings, mitigation plans, owners and timelines.","con biz"],
+["Built risk heat maps and exposure dashboards in Excel and PowerPoint so C-suite stakeholders could see mitigation status and key risk indicators.","biz con"],
+["Led ESG benchmarking, built risk scenario models and presented findings to EY partners in client-ready decks.","con"]]},
+{t:"Founder",o:"Wolf Rayet Technology, Rajkot",d:"Feb 2022 to Jun 2023",b:[
+["Grew the online reach of 10+ local businesses by 35%.","pre biz"],
+["Ran 20+ customer interviews and MVP experiments to shape offerings across 3+ market segments, with no external funding.","prod con"]]},
+{t:"Machinery Development, Defence Sector",o:"Weldor CNC Machines, Rajkot",d:"Jul 2021 to Jan 2022",b:[
+["Coordinated cross-functional teams to deliver an INR 3 Cr defence-sector project on time.","biz"],
+["Ran B2B client analysis and stakeholder engagement to drive adoption among defence contractors and OEMs.","pre biz"]]}];
+const SK=[["Requirements and BRDs","prod biz con"],["User stories","prod"],["Process mapping","biz con"],["Gap analysis","con biz"],["As-Is / To-Be design","biz con"],["Business cases","con biz"],["Agile / Scrum","prod biz"],
+["Stakeholder management","con biz pre"],["Executive reporting","con biz"],["Market research","con prod"],["Problem structuring","con"],["Digital transformation","con"],
+["Customer discovery","prod"],["MVP validation","prod"],["Go-to-market","prod pre"],["Product requirements","prod"],
+["RFP and proposals","pre"],["Solution design","pre prod"],["Win themes","pre"],["Bid management","pre biz"],
+["Power BI","biz pre con"],["Excel","biz con"],["SQL (basic)","biz"],["PowerPoint","con pre"],["CRM reporting","pre biz"],["Copilot Studio","prod pre"],["Siemens Teamcenter","pre prod"],
+["PLM","pre con"],["Industry 4.0","con pre"],["Digital twin","con pre"],["Aerospace, automotive, defense","pre con"],["Enterprise risk (COSO, ISO 31000)","con"],["ESG","con"]];
+const $=s=>document.querySelector(s),all=s=>document.querySelectorAll(s);
+$("#jobs").innerHTML=JOBS.map(j=>`<article class="job"><header><h3>${j.t}</h3><span class="meta">${j.d}</span></header><div class="meta">${j.o}</div><ul>${j.b.map(([x,t])=>`<li class="b" data-l="${t}">${x}</li>`).join("")}</ul></article>`).join("");
+$("#sk").innerHTML=SK.map(([x,t])=>`<span class="sk" data-l="${t}">${x}</span>`).join("");
+$("#chips").innerHTML=Object.entries(LENSES).map(([k,v])=>`<button class="chip" data-k="${k}" aria-pressed="${k==="all"}">${v[0]}</button>`).join("");
+function setLens(k){
+ all(".chip").forEach(c=>c.setAttribute("aria-pressed",c.dataset.k===k));
+ $("#blurb").textContent=LENSES[k][1];
+ all(".b,.sk").forEach(e=>{const m=k==="all"||e.dataset.l.split(" ").includes(k);
+  e.classList.toggle("on",k!=="all"&&m);e.classList.toggle("dim",k!=="all"&&!m)});
+}
+$("#chips").addEventListener("click",e=>{const c=e.target.closest(".chip");if(c)setLens(c.dataset.k)});
+setLens("all");
+function toast(m){const t=$("#toast");t.textContent=m;t.classList.add("show");setTimeout(()=>t.classList.remove("show"),1800)}
+$("#cp").onclick=async()=>{const m="sonirudresh1@gmail.com";try{await navigator.clipboard.writeText(m);toast("Email copied")}catch(e){toast(m)}};
+$("#th").onclick=()=>{const r=document.documentElement,d=r.dataset.theme?r.dataset.theme==="dark":matchMedia("(prefers-color-scheme:dark)").matches;r.dataset.theme=d?"light":"dark"};
+const io=new IntersectionObserver(es=>es.forEach(e=>{if(!e.isIntersecting)return;io.unobserve(e.target);const el=e.target,n=+el.dataset.n,s=performance.now();
+ (function f(t){const p=Math.min((t-s)/900,1);el.textContent=Math.round(n*p)+(p===1?"+":"");if(p<1)requestAnimationFrame(f)})(s)}));
+all("[data-n]").forEach(e=>io.observe(e));
+</script>
+</body>
+</html>
